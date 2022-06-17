@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/styles.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+    <script src="/scripts.js" defer></script>
     <title>eBook</title>
 </head>
 <body>
@@ -65,7 +66,9 @@
                 </div>
 
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="https://picsum.photos/938/1045" alt="eBook cover">
+                    <span class="custom-tooltip" data-bs-placement="bottom" title="eBook-title Cover">
+                        <img class="img-fluid" src="https://picsum.photos/938/1045" alt="eBook cover">
+                    </span>
                 </div>
             </div>
         </div>
@@ -335,6 +338,13 @@
                                 <i class="bi bi-envelope-fill"></i>
                             </span>
                             <input type="email" class="form-control" id="email" placeholder="e.g. john.doe@example.com">
+
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span class="custom-tooltip" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
 
                         <label for="name" class="form-label">Name:</label>
@@ -343,6 +353,13 @@
                                 <i class="bi bi-person-fill"></i>
                             </span>
                             <input type="text" class="form-control" id="name" placeholder="e.g. John Doe">
+
+                            <!-- tooltip -->
+                            <span class="input-group-text">
+                                <span class="custom-tooltip" data-bs-placement="bottom" title="Enter your name.">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
                         </div>
 
                         <label for="subject" class="form-label">What is your question about?</label>
